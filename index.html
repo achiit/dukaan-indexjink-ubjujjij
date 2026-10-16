@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Corner Cup | Café in Civil Lines, Bareilly</title>
+<meta name="description" content="Coffee, chai, desserts and quick bites in Civil Lines, Bareilly. Laptop-friendly seating, outdoor tables, takeaway and no-contact delivery.">
+<meta property="og:title" content="The Corner Cup | Café in Civil Lines, Bareilly">
+<meta property="og:description" content="Good coffee, honest desserts and a table where you can work all afternoon.">
+<meta name="theme-color" content="#2F5D50">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EFE3;--ink:#2B2320;--brand:#2F5D50;--gold:#D9A441;--line:#D8CBB6;--soft:#EBE0CE;
+--serif:'Fraunces',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px;padding-bottom:70px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);line-height:1.15;font-weight:700}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--brand);font-size:.95rem}
+.btn.wa{background:var(--brand);color:#F6EFE3}
+.btn.call{color:var(--brand)}
+.btn.sm{padding:8px 14px;font-size:.85rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.bean{width:22px;height:22px;flex:none}
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:var(--serif);font-weight:700;font-size:1.25rem;text-decoration:none;display:flex;gap:8px;align-items:center}
+nav{display:none;gap:22px}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+nav.open{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--bg);padding:18px 20px;border-bottom:1px solid var(--line)}
+.hd-act{display:none;gap:8px}
+.burger{background:none;border:1px solid var(--line);border-radius:8px;width:42px;height:38px;font-size:1.3rem;color:var(--ink)}
+/* hero */
+.hero{padding:48px 0 64px}
+.hero .wrap{display:grid;gap:36px}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);margin-bottom:16px}
+.proof{font-weight:500;margin-bottom:22px;max-width:46ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.micro{font-size:.85rem;color:#5b4f47}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:360px;object-fit:cover;border-radius:160px 160px 14px 14px;background:var(--soft)}
+.badge{position:absolute;left:-6px;bottom:18px;background:var(--gold);color:var(--ink);padding:10px 16px;border-radius:12px;font-family:var(--serif);font-weight:700;transform:rotate(-4deg)}
+/* trust */
+.trust{background:var(--brand);color:#F6EFE3;padding:34px 0}
+.trust ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.trust b{display:block;font-family:var(--serif);font-size:2rem;color:var(--gold)}
+.trust span{font-size:.9rem}
+/* services */
+.grid{display:grid;gap:16px;margin-top:30px}
+.card{background:#FBF6EC;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.card.big{background:var(--soft)}
+.card p{font-size:.95rem;flex:1}
+.price{font-weight:700;color:var(--brand)}
+.card .btn{align-self:flex-start;margin-top:6px}
+/* about */
+.about .wrap{display:grid;gap:32px}
+.av{width:96px;height:96px;border-radius:50%;background:var(--brand);color:var(--gold);font-family:var(--serif);font-size:2.2rem;display:grid;place-items:center;font-weight:700}
+.about p{margin-bottom:14px;max-width:62ch}
+.diff{list-style:none;display:grid;gap:12px}
+.diff li{display:flex;gap:12px;align-items:flex-start;border-bottom:1px dashed var(--line);padding-bottom:12px}
+/* gallery */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.gal img{width:100%;height:100%;min-height:150px;object-fit:cover;border-radius:12px;background:var(--soft)}
+.gal .w{grid-column:span 2}
+/* reviews */
+.rev{display:grid;gap:16px;margin-top:28px}
+.rev blockquote{background:#FBF6EC;border-left:4px solid var(--gold);padding:20px;border-radius:0 14px 14px 0}
+.stars{display:flex;gap:3px;margin-bottom:8px}
+.stars svg{width:18px;height:18px;fill:var(--gold)}
+.rev cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.9rem}
+/* pricing */
+.plist{list-style:none;max-width:640px;margin-top:24px}
+.plist li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px dotted var(--ink)}
+.plist li span:last-child{font-weight:700;white-space:nowrap}
+.note{margin-top:14px;font-size:.9rem;color:#5b4f47}
+/* contact */
+.contact .wrap{display:grid;gap:28px}
+iframe{width:100%;height:320px;border:0;border-radius:16px;background:var(--soft)}
+.hours{display:grid;grid-template-columns:1fr auto;gap:6px 24px;max-width:320px;margin:12px 0 20px}
+.cm{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+/* footer */
+footer{background:var(--ink);color:#EBE0CE;padding:56px 0 30px}
+footer .wrap{display:grid;gap:24px}
+footer h3{color:var(--gold)}
+footer nav{display:flex;flex-wrap:wrap;gap:16px}
+footer .btn.wa{background:var(--gold);color:var(--ink);border-color:var(--gold);font-size:1.1rem;padding:16px 26px;justify-self:start}
+.built{font-size:.85rem;opacity:.85;border-top:1px solid #4a3f39;padding-top:18px}
+/* sticky bar */
+.bar{position:fixed;bottom:0;left:0;right:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;background:var(--bg);border-top:1px solid var(--line);padding:8px;gap:8px}
+.bar .btn{justify-content:center}
+@media(min-width:520px){.grid{grid-template-columns:1fr 1fr}.gal{grid-template-columns:repeat(3,1fr)}.rev{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:769px){body{padding-bottom:0}.bar{display:none}.burger{display:none}nav{display:flex}.hd-act{display:flex}}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center}.about .wrap{grid-template-columns:.9fr 1.1fr}.contact .wrap{grid-template-columns:1.2fr .8fr}footer .wrap{grid-template-columns:1.2fr 1fr 1fr}
+.hero-img{margin-right:-60px}.hero-img img{height:460px}
+.card.big{grid-row:span 2}}
+@media(min-width:1080px){.grid{grid-template-columns:repeat(3,1fr)}section{padding:104px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="bean" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="8" ry="11" transform="rotate(30 12 12)" fill="currentColor"/><path d="M8 4c6 4-2 12 4 17" fill="none" stroke="#F6EFE3" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></symbol>
+</defs></svg>
+
+<header>
+<div class="wrap hd">
+<a class="logo" href="#top"><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>The Corner Cup</a>
+<nav id="nav" aria-label="Main">
+<a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#prices">Prices</a><a href="#contact">Visit</a>
+</nav>
+<div class="hd-act">
+<a class="btn call sm" href="tel:+919876543210">Call</a>
+<a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%20The%20Corner%20Cup%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</div>
+</header>
+
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<h1>Good coffee, warm desserts and a quiet table for your laptop!</h1>
+<p class="proof">Civil Lines ka neighbourhood café. Fresh coffee, chai, bakes and quick bites, served by people who remember your order.</p>
+<div class="ctas">
+<a class="btn wa" href="https://wa.me/919876543210?text=Hi%20The%20Corner%20Cup%2C%20I%20want%20to%20reserve%20a%20table." target="_blank" rel="noopener">Book a table on WhatsApp</a>
+<a class="btn call" href="tel:+919876543210">Call us</a>
+</div>
+<p class="micro">Outdoor seating &middot; No-contact delivery &middot; Laptop-friendly tables</p>
+</div>
+<div class="hero-img">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop" alt="Cup of coffee on a café table" width="800" height="460">
+<div class="badge">Fresh brew all day</div>
+</div>
+</div>
+</section>
+
+<div class="trust"><div class="wrap"><ul>
+<li><b>7+</b><span>years in Civil Lines</span></li>
+<li><b>25+</b><span>items on the menu</span></li>
+<li><b>12</b><span>tables with charging points</span></li>
+<li><b>4.6</b><span>average Google rating (sample)</span></li>
+</ul></div></div>
+
+<section id="menu"><div class="wrap">
+<h2>What we serve</h2>
+<p>Everything is made fresh each morning. Tap any item to ask us about it.</p>
+<div class="grid">
+<article class="card big"><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg><h3>Coffee</h3><p>Filter coffee, cappuccino, cold coffee and espresso, made from beans we roast-pick ourselves. The reason most people walk in.</p><span class="price">From ₹80</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20coffee%20from%20The%20Corner%20Cup." target="_blank" rel="noopener">Ask on WhatsApp</a></article>
+<article class="card"><svg class="bean" style="color:var(--gold)"><use href="#bean"/></svg><h3>Tea</h3><p>Masala chai, kadak chai, green tea and iced lemon tea.</p><span class="price">From ₹40</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20order%20tea%20from%20The%20Corner%20Cup." target="_blank" rel="noopener">Ask on WhatsApp</a></article>
+<article class="card"><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg><h3>Quick bites</h3><p>Grilled sandwiches, garlic bread, pasta, fries and wraps.</p><span class="price">From ₹90</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20what%20quick%20bites%20do%20you%20have%20today%3F" target="_blank" rel="noopener">Ask on WhatsApp</a></article>
+<article class="card"><svg class="bean" style="color:var(--gold)"><use href="#bean"/></svg><h3>Desserts</h3><p>Brownies, cheesecake slices, waffles and pastries baked in small batches.</p><span class="price">From ₹110</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20which%20desserts%20are%20available%20today%3F" target="_blank" rel="noopener">Ask on WhatsApp</a></article>
+<article class="card"><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg><h3>Dine-in</h3><p>Indoor and outdoor seating. Work-friendly corner with sockets and Wi-Fi.</p><span class="price">No minimum order</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20reserve%20a%20table%20for%20dine-in." target="_blank" rel="noopener">Reserve a table</a></article>
+<article class="card"><svg class="bean" style="color:var(--gold)"><use href="#bean"/></svg><h3>Takeaway &amp; delivery</h3><p>Packed fresh. No-contact delivery to your door in nearby areas.</p><span class="price">Delivery from ₹30</span><a class="btn wa sm" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20a%20no-contact%20delivery%20order.%20Please%20share%20the%20menu." target="_blank" rel="noopener">Order delivery</a></article>
+</div>
+</div></section>
+
+<section id="about" style="background:var(--soft)"><div class="wrap about">
+<div>
+<div class="av" aria-hidden="true">RS</div>
+<h2 style="margin-top:20px">Hello, I'm Rohan.</h2>
+<p>I started The Corner Cup in 2019 after helping my mother in her tiffin kitchen. She taught me that people remember how a place feels before they remember the food.</p>
+<p>Chai at my nani's house in Bareilly is where my coffee habit began, and I wanted a space where students, freelancers and families could all sit comfortably without being rushed.</p>
+</div>
+<ul class="diff">
+<li><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>Table spots with charging points for laptop work</li>
+<li><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>Desserts baked in small batches every morning</li>
+<li><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>Outdoor seating for evenings</li>
+<li><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>No-contact delivery, packed hot</li>
+<li><svg class="bean" style="color:var(--brand)"><use href="#bean"/></svg>Pay what you see on the board, no surprise charges</li>
+</ul>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+<h2>A look inside</h2>
+<div class="gal">
+<img class="w" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&auto=format&fit=crop" alt="Café interior" loading="lazy" width="800" height="500">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&auto=format&fit=crop" alt="Fresh coffee" loading="lazy" width="400" height="300">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&auto=format&fit=crop" alt="Chocolate cake slice" loading="lazy" width="400" height="300">
+<img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&auto=format&fit=crop" alt="Working on a laptop at a café" loading="lazy" width="400" height="300">
+<img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&auto=format&fit=crop" alt="Cup of chai" loading="lazy" width="400" height="300">
+<img class="w" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop" alt="Café outdoor seating" loading="lazy" width="800" height="500">
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>What neighbours say</h2>
+<div class="rev">
+<blockquote><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>Sat here 5 hours before my submission, charger mil gaya and no one asked me to order again. Cold coffee was solid.<cite>Ananya, Civil Lines</cite></blockquote>
+<blockquote><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>Brownie was warm and not too sweet. Ordered delivery on a rainy day, it came sealed and on time.<cite>Imran, Rampur Garden</cite></blockquote>
+<blockquote><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>We come on Sundays with the kids. Outside tables are nice in the evening and the masala chai is proper.<cite>Pooja, Subhash Nagar</cite></blockquote>
+</div>
+</div></section>
+
+<section id="prices" style="background:var(--soft)"><div class="wrap">
+<h2>Prices, simply</h2>
+<ul class="plist">
+<li><span>Masala chai</span><span>₹40</span></li>
+<li><span>Filter coffee</span><span>₹80</span></li>
+<li><span>Cappuccino</span><span>₹120</span></li>
+<li><span>Cold coffee</span><span>₹140</span></li>
+<li><span>Grilled sandwich</span><span>₹90</span></li>
+<li><span>Pasta</span><span>₹160</span></li>
+<li><span>Brownie</span><span>₹110</span></li>
+<li><span>Cheesecake slice</span><span>₹150</span></li>
+</ul>
+<p class="note">Sample prices. Taxes and delivery charges are shown before you confirm.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<div>
+<iframe src="https://maps.google.com/maps?q=The%20Corner%20Cup%2C%20Civil%20Lines%2C%20Bareilly%2C%20Uttar%20Pradesh%20243001&amp;output=embed" title="Map to The Corner Cup" loading="lazy"></iframe>
+</div>
+<div>
+<h2>Come by</h2>
+<p>12, Station Road, Civil Lines, Bareilly, Uttar Pradesh 243001</p>
+<div class="hours"><span>Mon to Fri</span><span>8 AM to 11 PM</span><span>Sat and Sun</span><span>8 AM to 11:30 PM</span></div>
+<div class="cm">
+<a href="tel:+919876543210">+91 98765 43210</a>
+<a href="https://instagram.com/thecornercup" target="_blank" rel="noopener">@thecornercup</a>
+</div>
+<div class="ctas">
+<a class="btn wa" href="https://wa.me/919876543210?text=Hi%20The%20Corner%20Cup%2C%20are%20you%20open%20now%3F" target="_blank" rel="noopener">WhatsApp us</a>
+<a class="btn call" href="tel:+919876543210">Call</a>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><h3>The Corner Cup</h3><p>Quality products with friendly local service.</p></div>
+<nav aria-label="Footer"><a href="#menu">Menu</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#prices">Prices</a><a href="#contact">Visit</a></nav>
+<a class="btn wa" href="https://wa.me/919876543210?text=Hi%20The%20Corner%20Cup%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+</div>
+<div class="wrap"><p class="built">&copy; <span id="yr"></span> The Corner Cup, Bareilly<br>built with ❤️ by 21.coders</p></div>
+</footer>
+
+<div class="bar">
+<a class="btn call" href="tel:+919876543210">Call</a>
+<a class="btn wa" href="https://wa.me/919876543210?text=Hi%20The%20Corner%20Cup%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var b=document.getElementById('burger'),n=document.getElementById('nav');
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+</script>
+</body>
+</html>
